@@ -1,8 +1,15 @@
 # shortcut to this dotfiles path is $ZSH
 export ZSH=$HOME/.dotfiles
 
+export OHMYZSH=$HOME/.oh-my-zsh
+
 # your project folder that we can `c [tab]` to
-export PROJECTS=~/Code
+export PROJECTS=~/Documents/Code
+
+# Zsh theme
+export ZSH_THEME="my-theme"
+
+plugins=()
 
 # Stash your environment variables in ~/.localrc. This means they'll stay out
 # of your main dotfiles repository (which may be public, like this one), but
@@ -14,7 +21,7 @@ fi
 
 # all of our zsh files
 typeset -U config_files
-config_files=($ZSH/**/*.zsh)
+config_files=($ZSH/**/*.zsh $OHMYZSH/lib/*.zsh)
 
 # load the path files
 for file in ${(M)config_files:#*/path.zsh}
@@ -36,6 +43,24 @@ compinit
 for file in ${(M)config_files:#*/completion.zsh}
 do
   source $file
+done
+
+# Load the theme
+if [ ! "$ZSH_THEME" = ""  ]; then
+  source "$ZSH/zsh/$ZSH_THEME.zsh-theme"
+fi
+
+is_plugin() {
+  local base_dir=$1
+  local name=$2
+  test -f $base_dir/plugins/$name/$name.plugin.zsh \
+    || test -f $base_dir/plugins/$name/_$name
+}
+# Load all of the plugins that were defined in plugins
+for plugin ($plugins); do
+  if [ -f $OHMYZSH/plugins/$plugin/$plugin.plugin.zsh ]; then
+    source $OHMYZSH/plugins/$plugin/$plugin.plugin.zsh
+  fi
 done
 
 unset config_files
