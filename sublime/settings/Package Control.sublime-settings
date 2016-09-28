@@ -1,0 +1,22 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"Alignment",
+		"Babel",
+		"Boxy Theme",
+		"DocBlockr",
+		"GitGutter",
+		"Material Theme",
+		"Oceanic Color Scheme",
+		"Oceanic Next Color Scheme",
+		"Package Control",
+		"PlainTasks",
+		"SublimeGit",
+		"SublimeLinter"
+	]
+}

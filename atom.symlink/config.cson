@@ -20,8 +20,8 @@
       "glacier-syntax"
     ]
   editor:
-    fontFamily: "Menlo"
-    fontSize: 15
+    fontFamily: "Inconsolata-g"
+    fontSize: 13
     invisibles: {}
     showIndentGuide: true
     softWrapAtPreferredLineLength: true
