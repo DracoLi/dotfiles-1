@@ -58,6 +58,9 @@ sudo nvram SystemAudioVolume=%00
 # Finder: show all filename extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
+# Show all files
+defaults write com.apple.finder AppleShowAllFiles -bool true
+
 # Finder: show status bar
 defaults write com.apple.finder ShowStatusBar -bool true
 
