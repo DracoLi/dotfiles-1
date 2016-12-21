@@ -23,4 +23,5 @@ brew 'unrar'
 brew 'wget'
 brew 'node'
 brew 'readline'
+brew 'yarn'
 
