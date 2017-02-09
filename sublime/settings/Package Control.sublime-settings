@@ -8,17 +8,19 @@
 		"AdvancedNewFile",
 		"Alignment",
 		"Babel",
+		"Better CoffeeScript",
 		"Boxy Theme",
 		"C# Snippets",
 		"DocBlockr",
+		"Emmet",
 		"GitGutter",
+		"GitSavvy",
 		"Material Theme",
 		"Oceanic Color Scheme",
 		"Oceanic Next Color Scheme",
 		"Package Control",
 		"PlainTasks",
 		"Sass",
-		"SublimeGit",
 		"SublimeLinter"
 	]
 }
