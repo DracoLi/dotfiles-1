@@ -25,4 +25,5 @@ brew 'wget'
 brew 'node'
 brew 'readline'
 brew 'yarn'
+brew 'tldr'
 
