@@ -3,6 +3,7 @@ tap 'homebrew/bundle'
 
 brew 'coreutils'
 brew 'go'
+brew 'dep'
 brew 'grc'
 brew 'tree'
 brew 'the_silver_searcher'
