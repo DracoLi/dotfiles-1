@@ -21,6 +21,7 @@
 		"Package Control",
 		"PlainTasks",
 		"Sass",
-		"SublimeLinter"
+		"SublimeLinter",
+		"TOML"
 	]
 }
