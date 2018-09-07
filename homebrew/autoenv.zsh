@@ -1,4 +1,4 @@
 # Activate autoenv if installed by homebrew
-if brew ls --versions autoenv > /dev/null; then
-  source $(brew --prefix autoenv)/activate.sh
+if brew ls --versions direnv > /dev/null; then
+  eval "$(direnv hook zsh)"
 fi

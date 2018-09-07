@@ -8,3 +8,5 @@ then
   alias ll="gls -lF --color"
   alias la='gls -AF --color'
 fi
+
+alias ipaddress="ipconfig getifaddr en0"
