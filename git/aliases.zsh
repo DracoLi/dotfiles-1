@@ -21,9 +21,4 @@ alias gcb='git copy-branch-name'
 alias gb='git branch'
 alias gs='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
 alias gac='git add -A && git commit -m'
-
-# Cleaning submodules
-alias gupsubs="git submodule update --recursive"
-alias gpullsubs="git submodule foreach git checkout master; git submodule foreach git pull origin master"
-alias gresetsubs="git submodule foreach git add .; git submodule foreach git reset --hard HEAD"
-alias gsubs="gresetsubs; gpullsubs; gupsubs;"
+alias ge='git-edit-new'

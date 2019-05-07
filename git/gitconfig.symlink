@@ -34,3 +34,5 @@
 [user]
 	name = DracoLi
 	email = draco@dracoli.com
+[credential]
+	helper = osxkeychain
