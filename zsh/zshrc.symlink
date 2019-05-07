@@ -1,13 +1,14 @@
 # shortcut to this dotfiles path is $ZSH
-export ZSH=$HOME/.dotfiles
+export ZSH=$HOME/.oh-my-zsh
 
-export OHMYZSH=$HOME/.oh-my-zsh
+export DOTFILES=$HOME/.dotfiles
 
 # your project folder that we can `c [tab]` to
 export PROJECTS=~/Documents/Code
 
-# Zsh theme
-export ZSH_THEME="my-theme"
+export ZSH_CUSTOM=$DOTFILES/zsh/custom
+
+export ZSH_THEME="spaceship"
 
 plugins=()
 
@@ -21,7 +22,7 @@ fi
 
 # all of our zsh files
 typeset -U config_files
-config_files=($ZSH/**/*.zsh $OHMYZSH/lib/*.zsh)
+config_files=($DOTFILES/**/*.zsh)
 
 # load the path files
 for file in ${(M)config_files:#*/path.zsh}
@@ -45,24 +46,6 @@ do
   source $file
 done
 
-# Load the theme
-if [ ! "$ZSH_THEME" = ""  ]; then
-  source "$ZSH/zsh/$ZSH_THEME.zsh-theme"
-fi
-
-is_plugin() {
-  local base_dir=$1
-  local name=$2
-  test -f $base_dir/plugins/$name/$name.plugin.zsh \
-    || test -f $base_dir/plugins/$name/_$name
-}
-# Load all of the plugins that were defined in plugins
-for plugin ($plugins); do
-  if [ -f $OHMYZSH/plugins/$plugin/$plugin.plugin.zsh ]; then
-    source $OHMYZSH/plugins/$plugin/$plugin.plugin.zsh
-  fi
-done
-
 unset config_files
 
 # Better history
@@ -73,3 +56,5 @@ zle -N up-line-or-beginning-search
 zle -N down-line-or-beginning-search
 bindkey "^[[A" up-line-or-beginning-search # Up
 bindkey "^[[B" down-line-or-beginning-search # Down
+
+source $ZSH/oh-my-zsh.sh

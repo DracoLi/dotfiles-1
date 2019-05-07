@@ -3,4 +3,4 @@
 # Sync sublime settings
 
 rm -rf ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
-ln -s $ZSH/sublime/settings/ ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+ln -s $DOTFILES/sublime/settings/ ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User

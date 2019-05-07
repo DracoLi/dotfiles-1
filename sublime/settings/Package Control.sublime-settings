@@ -5,15 +5,15 @@
 	],
 	"installed_packages":
 	[
+		"A File Icon",
 		"AdvancedNewFile",
 		"Alignment",
+		"ayu",
 		"Babel",
-		"Better CoffeeScript",
-		"Boxy Theme",
+		"BracketHighlighter",
 		"C# Snippets",
 		"DocBlockr",
 		"Dockerfile Syntax Highlighting",
-		"Emmet",
 		"Ethereum",
 		"GitGutter",
 		"GitSavvy",
@@ -23,7 +23,10 @@
 		"Package Control",
 		"PlainTasks",
 		"Sass",
+		"SideBarEnhancements",
 		"SublimeLinter",
+		"Theme - Monokai Pro",
+		"Theme - Spacegray",
 		"TOML"
 	]
 }

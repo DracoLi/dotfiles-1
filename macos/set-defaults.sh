@@ -33,12 +33,6 @@ defaults write com.apple.LaunchServices LSQuarantine -bool false
 # Disable “natural” (Lion-style) scrolling - OMG I hate inverted scrolling
 defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 
-# Use scroll gesture with the Ctrl (^) modifier key to zoom
-defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
-defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
-# Follow the keyboard focus while zoomed in
-defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
-
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=%00
 
@@ -113,8 +107,8 @@ defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write -g ApplePressAndHoldEnabled -bool false
 
 # Set a really fast key repeat.
-defaults write NSGlobalDomain KeyRepeat -int 1
-defaults write NSGlobalDomain InitialKeyRepeat -int 10
+# defaults write NSGlobalDomain KeyRepeat -int 3
+# defaults write NSGlobalDomain InitialKeyRepeat -int 10
 
 ###############################################################################
 # Screen                                                                      #
