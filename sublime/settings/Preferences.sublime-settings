@@ -1,5 +1,5 @@
 {
-	"bold_folder_labels": true,
+	"bold_folder_labels": false,
 	"color_scheme": "Monokai Pro (Filter Spectrum).sublime-color-scheme",
 	"ensure_newline_at_eof_on_save": true,
 	"folder_exclude_patterns":
@@ -25,7 +25,7 @@
 		"*.idb",
 		"*.psd"
 	],
-	"font_face": "Inconsolata-g",
+	"font_face": "Source Code Variable",
 	"font_size": 12,
 	"highlight_line": false,
 	"highlight_modified_tabs": true,

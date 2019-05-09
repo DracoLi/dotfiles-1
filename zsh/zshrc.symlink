@@ -18,6 +18,8 @@ then
   source ~/.localrc
 fi
 
+source $ZSH/oh-my-zsh.sh
+
 # all of our zsh files
 typeset -U config_files
 config_files=($DOTFILES/**/*.zsh)
@@ -38,12 +40,6 @@ done
 autoload -U compinit
 compinit
 
-# load every completion after autocomplete loads
-for file in ${(M)config_files:#*/completion.zsh}
-do
-  source $file
-done
-
 unset config_files
 
 # Better history
@@ -55,4 +51,6 @@ zle -N down-line-or-beginning-search
 bindkey "^[[A" up-line-or-beginning-search # Up
 bindkey "^[[B" down-line-or-beginning-search # Down
 
-source $ZSH/oh-my-zsh.sh
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
