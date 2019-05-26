@@ -8,7 +8,6 @@
 		"A File Icon",
 		"AdvancedNewFile",
 		"Alignment",
-		"ayu",
 		"Babel",
 		"BracketHighlighter",
 		"C# Snippets",
@@ -17,16 +16,13 @@
 		"Ethereum",
 		"GitGutter",
 		"GitSavvy",
-		"Material Theme",
-		"Oceanic Color Scheme",
-		"Oceanic Next Color Scheme",
 		"Package Control",
 		"PlainTasks",
 		"Sass",
 		"SideBarEnhancements",
 		"SublimeLinter",
 		"Theme - Monokai Pro",
-		"Theme - Spacegray",
-		"TOML"
+		"TOML",
+		"TypeScript Syntax"
 	]
 }
