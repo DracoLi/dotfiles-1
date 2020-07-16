@@ -16,13 +16,15 @@
         ui = true
 [core]
         excludesfile = ~/.gitignore
-        editor = micro
+        editor = code --wait
 [apply]
         whitespace = nowarn
 [mergetool]
         keepBackup = false
-[difftool]
-        prompt = false
+[diff]
+    tool = default-difftool
+[difftool "default-difftool"]
+    cmd = code --wait --diff $LOCAL $REMOTE
 [help]
         autocorrect = 1
 [push]

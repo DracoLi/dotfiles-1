@@ -11,7 +11,7 @@ brew "nvm"
 brew "sqlite"
 brew "python"
 brew "yarn"
-brew "openssl" # Used by ruby gem mysql2
+brew "openssl@1.1" # Used by ruby gem mysql2
 brew "mysql"
 # cask "spotify"
 # cask "the-unarchiver"
