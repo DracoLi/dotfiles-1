@@ -10,3 +10,7 @@ then
 fi
 
 alias ipaddress="ipconfig getifaddr en0"
+
+aws-vault-session() {
+  aws-vault exec "$@" --no-session
+}
